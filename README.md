@@ -1,4 +1,4 @@
-#Felucia
+#Felucia [![Build Status](https://travis-ci.org/mtynior/Felucia.svg?branch=master)](https://travis-ci.org/mtynior/Felucia)
 
 Felucia provides useful extensions to UIColor.
 
