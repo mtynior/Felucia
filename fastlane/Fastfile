@@ -1,0 +1,26 @@
+
+default_platform :ios
+
+
+platform :ios do
+
+  desc "Runs all the tests"
+  lane :test do
+      xctest(
+      scheme: 'Felucia',
+      destination: "platform=iOS Simulator,name=iPhone 6,OS=9.1",
+      reports: [
+        {
+          report: "html",
+          output: "build/reports/unit-tests.html"
+        },
+        {
+          report: "junit",
+          output: "build/reports/unit-tests.xml"
+        }
+      ],
+      clean: nil
+    )
+  end
+
+end
