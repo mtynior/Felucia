@@ -5,7 +5,7 @@ Felucia provides useful extensions to UIColor.
 ## Requirements
 
 - iOS 8.1+
-- Xcode 7.1+
+- Xcode 7.3+
 
 ##Integration
 

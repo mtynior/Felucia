@@ -46,7 +46,7 @@ class FeluciaTestsHexColor: XCTestCase {
     func test_ShouldReturnNilForInvalidHexString() {
         let actualColor = UIColor(hexARGBString: "#FBCFBCFBCFCB")
         
-        XCTAssertNil(actualColor, "Should return black color from invalid ARGB String")
+        XCTAssertNil(actualColor, "Should return nil for invalid ARGB String")
     }
     
 }

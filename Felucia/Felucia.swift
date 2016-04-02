@@ -95,6 +95,10 @@ extension UIColor {
 
         }
         else {
+            // Failable initializer must set all stored propertied before returning nil :(
+            // In conveniece initializer we have to call designated initializer before returning nil,
+            // otherwise we will get BAD_ACCESS.
+            self.init(red: 0, green: 0, blue: 0)
             return nil
         }
     }
