@@ -10,7 +10,7 @@ import UIKit
 
 // MARK: - Eqauality operators
 
-func ==(lhs:UIColor, rhs:UIColor) -> Bool {
+public func ==(lhs:UIColor, rhs:UIColor) -> Bool {
     let lhsRGBA = lhs.rgba()
     let rhsRGBA = rhs.rgba()
     
@@ -20,7 +20,7 @@ func ==(lhs:UIColor, rhs:UIColor) -> Bool {
         && lhsRGBA.a == rhsRGBA.a
 }
 
-func !=(lhs:UIColor, rhs:UIColor) -> Bool {
+public func !=(lhs:UIColor, rhs:UIColor) -> Bool {
     return !(lhs == rhs)
 }
 
@@ -37,7 +37,7 @@ extension UIColor {
         self.init(colorLiteralRed: ratioRed, green: ratioGreen, blue: ratioBlue, alpha: ratioAlpha)
     }
     
-    func rgba() -> (r:Int, g:Int, b:Int, a:Int) {
+    public func rgba() -> (r:Int, g:Int, b:Int, a:Int) {
         var fRed : CGFloat = 0
         var fGreen : CGFloat = 0
         var fBlue : CGFloat = 0
@@ -52,7 +52,7 @@ extension UIColor {
         return (iRed, iGreen, iBlue, iAlpha)
     }
     
-    func rgbaArray() -> [Int] {
+    public func rgbaArray() -> [Int] {
         let components = rgba()
         return [components.r, components.g, components.b, components.a]
     }
@@ -66,7 +66,7 @@ extension UIColor {
 
 extension UIColor {
     
-    convenience init?(hexARGBString:String) {
+    public convenience init?(hexARGBString:String) {
         let hex3 = "^#?([0-9a-fA-F]{1})([0-9a-fA-F]{1})([0-9a-fA-F]{1})$"
         let hex6 = "^#?([0-9a-fA-F]{2})([0-9a-fA-F]{2})([0-9a-fA-F]{2})$"
         let hex8 = "^#?([0-9a-fA-F]{2})([0-9a-fA-F]{2})([0-9a-fA-F]{2})([0-9a-fA-F]{2})$"
@@ -129,7 +129,7 @@ extension UIColor {
         self.init(colorLiteralRed: red, green: green, blue: blue, alpha: 1.0)
     }
     
-    func rgbaf() -> (r:Float, g:Float, b:Float, a:Float) {
+    public func rgbaf() -> (r:Float, g:Float, b:Float, a:Float) {
         var fRed : CGFloat = 0
         var fGreen : CGFloat = 0
         var fBlue : CGFloat = 0
@@ -140,7 +140,7 @@ extension UIColor {
         return (Float(fRed), Float(fGreen), Float(fBlue), Float(fAlpha))
     }
     
-    func rgbafArray() -> [Float] {
+    public func rgbafArray() -> [Float] {
         let components = rgbaf()
         return [components.r, components.g, components.b, components.a]
     }
@@ -150,7 +150,7 @@ extension UIColor {
 
 extension UIColor {
     
-    func hsba() -> (h:Float, s:Float, b:Float, a:Float) {
+    public func hsba() -> (h:Float, s:Float, b:Float, a:Float) {
         var hue : CGFloat = 0
         var saturation : CGFloat = 0
         var brightness : CGFloat = 0
@@ -161,7 +161,7 @@ extension UIColor {
         return (Float(hue), Float(saturation), Float(brightness), Float(alpha))
     }
     
-    func hsbaArray() -> [Float] {
+    public func hsbaArray() -> [Float] {
         let components = hsba()
         return [components.h, components.s, components.b, components.a]
     }
@@ -173,7 +173,7 @@ extension UIColor {
 
 extension UIColor {
     
-    convenience init(h:Float, s:Float, l:Float, a:Float = 1.0) {
+    public convenience init(h:Float, s:Float, l:Float, a:Float = 1.0) {
         var r:Float
         var g:Float
         var b:Float
@@ -202,13 +202,13 @@ extension UIColor {
         var t = t1
         if(t < 0) {t += 1}
         if(t > 1) {t -= 1}
-        if(t < 1.0/6.0) {return p + (q - p) * 6.0 * t }
-        if(t < 1.0/2.0) {return q }
+        if(t < 1.0/6.0) { return p + (q - p) * 6.0 * t }
+        if(t < 1.0/2.0) { return q }
         if(t < 2.0/3.0) { return p + (q - p) * (2.0/3.0 - t) * 6.0 }
         return p;
     }
     
-    func hsla() -> (h:Float, s:Float, l:Float, a:Float) {
+    public func hsla() -> (h:Float, s:Float, l:Float, a:Float) {
         let components = rgbaf()
         let minComponent = min(components.r, components.g, components.b)
         let maxComponent = max(components.r, components.g, components.b)
@@ -236,7 +236,7 @@ extension UIColor {
         return (h, s, l, components.a)
     }
     
-    func hslaArray() -> [Float] {
+    public func hslaArray() -> [Float] {
         let components = hsla()
         return [components.h, components.s, components.l, components.a]
     }
@@ -247,7 +247,7 @@ extension UIColor {
 
 extension UIColor {
     
-   convenience init(cyan: Float, magneta: Float, yellow: Float, black: Float) {
+   public convenience init(cyan: Float, magneta: Float, yellow: Float, black: Float) {
         let red = (1 - cyan) * (1 - black)
         let green = (1 - magneta) * (1 - black)
         let blue = (1 - yellow) * (1 - black)
@@ -256,7 +256,7 @@ extension UIColor {
     }
     
     
-    func cmyk() -> (c:Float, m:Float, y:Float, k:Float) {
+    public func cmyk() -> (c:Float, m:Float, y:Float, k:Float) {
         let components = rgbaf()
         let black = 1 -  max(components.r, components.g, components.b)
         let cyan = (1 - components.r - black) / (1 - black)
@@ -266,7 +266,7 @@ extension UIColor {
         return (cyan, magneta, yellow, black)
     }
     
-    func cmykArray() -> [Float] {
+    public func cmykArray() -> [Float] {
         let components = cmyk()
         return [components.c, components.m, components.y, components.k]
     }
@@ -276,7 +276,7 @@ extension UIColor {
 
 extension UIColor {
     
-    func complementaryColor() -> UIColor {
+    public func complementaryColor() -> UIColor {
         let components = rgbaf()
         
         return UIColor(red: CGFloat(1.0 - components.r),
@@ -286,7 +286,7 @@ extension UIColor {
 
     }
 
-    func lighten(percentage: Float = 0.1) -> UIColor {
+    public func lighten(percentage: Float = 0.1) -> UIColor {
         var components = hsla()
         
         components.l += percentage
@@ -295,7 +295,7 @@ extension UIColor {
         return UIColor(h: components.h, s: components.s, l: components.l)
     }
     
-    func darken(percentage: Float = 0.1) -> UIColor {
+    public func darken(percentage: Float = 0.1) -> UIColor {
         var components = hsla()
         
         components.l -= percentage
@@ -304,7 +304,7 @@ extension UIColor {
         return UIColor(h: components.h, s: components.s, l: components.l)
     }
     
-    func grayscale() -> UIColor {
+    public func grayscale() -> UIColor {
         let components = rgba()
         
         // https://en.wikipedia.org/wiki/Grayscale#Converting_color_to_grayscale
@@ -317,18 +317,18 @@ extension UIColor {
         return UIColor(r: grayComponent, g: grayComponent, b: grayComponent, a: components.a)
     }
     
-    func isLight() -> Bool {
+    public func isLight() -> Bool {
         return !isDark()
     }
     
-    func isDark() -> Bool {
+    public func isDark() -> Bool {
         // YIQ equation from http://24ways.org/2010/calculating-color-contrast
         let components = rgba()
         let yiq = (components.r * 299 + components.g * 587 + components.b * 114) / 1000;
         return yiq < 128;
     }
     
-    class func randomColor() -> UIColor {
+    public class func randomColor() -> UIColor {
         //  Inspired by https://gist.github.com/kylefox/1689973
         let hue : CGFloat = CGFloat(arc4random() % 256) / 256 // use 256 to get full range from 0.0 to 1.0
         let saturation : CGFloat = CGFloat(arc4random() % 128) / 256 + 0.5 // from 0.5 to 1.0 to stay away from white
