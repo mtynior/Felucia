@@ -6,7 +6,7 @@
 //  Copyright © 2015 Michał Tynior. All rights reserved.
 //
 
-import Foundation
+import UIKit
 
 // MARK: - Eqauality operators
 

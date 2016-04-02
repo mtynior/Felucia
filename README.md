@@ -4,7 +4,7 @@ Felucia provides useful extensions to UIColor.
 
 ## Requirements
 
-- iOS 8.1+
+- iOS 9.0+ / tvOS 9.0+ / watchOS 2.0+
 - Xcode 7.3+
 
 ##Integration
@@ -13,7 +13,7 @@ Felucia provides useful extensions to UIColor.
 You can use [CocoaPods](http://cocoapods.org/) to install `Felucia` by adding it to your `Podfile`:
 
 ```ruby
-platform :ios, '8.1'
+platform :ios, '9.0'
 use_frameworks!
 
 target 'MyApp' do

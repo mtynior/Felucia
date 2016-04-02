@@ -7,10 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		900EE6CB1CAFF015004AF16A /* Felucia.h in Headers */ = {isa = PBXBuildFile; fileRef = 9061C9271BD5602900A191B7 /* Felucia.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		900EE6DD1CAFF134004AF16A /* Felucia.h in Headers */ = {isa = PBXBuildFile; fileRef = 9061C9271BD5602900A191B7 /* Felucia.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		900EE6E01CAFF239004AF16A /* Felucia.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9061C93E1BD5604C00A191B7 /* Felucia.swift */; };
+		900EE6E11CAFF23E004AF16A /* Felucia.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9061C93E1BD5604C00A191B7 /* Felucia.swift */; };
 		900FFDBB1C0E1B6200B0A2B5 /* Helpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 900FFDBA1C0E1B6200B0A2B5 /* Helpers.swift */; };
 		900FFDBD1C135BCE00B0A2B5 /* FeluciaTestsHSL.swift in Sources */ = {isa = PBXBuildFile; fileRef = 900FFDBC1C135BCE00B0A2B5 /* FeluciaTestsHSL.swift */; };
 		9061C9281BD5602900A191B7 /* Felucia.h in Headers */ = {isa = PBXBuildFile; fileRef = 9061C9271BD5602900A191B7 /* Felucia.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		9061C92F1BD5602900A191B7 /* Felucia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9061C9241BD5602900A191B7 /* Felucia.framework */; };
+		9061C92F1BD5602900A191B7 /* Felucia_iOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9061C9241BD5602900A191B7 /* Felucia_iOS.framework */; };
 		9061C9341BD5602900A191B7 /* FeluciaTestsRGBAInteger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9061C9331BD5602900A191B7 /* FeluciaTestsRGBAInteger.swift */; };
 		9061C93F1BD5604C00A191B7 /* Felucia.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9061C93E1BD5604C00A191B7 /* Felucia.swift */; };
 		90651C471BDEB18D00835B06 /* FeluciaTestsCMYK.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90651C461BDEB18D00835B06 /* FeluciaTestsCMYK.swift */; };
@@ -30,12 +34,16 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		900EE6C31CAFEFF9004AF16A /* Felucia_watchOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Felucia_watchOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		900EE6CC1CAFF06E004AF16A /* Info-iOS.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "Info-iOS.plist"; sourceTree = "<group>"; };
+		900EE6CD1CAFF06E004AF16A /* Info-watchOS.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "Info-watchOS.plist"; sourceTree = "<group>"; };
+		900EE6D51CAFF124004AF16A /* Felucia_tvOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Felucia_tvOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		900EE6DE1CAFF159004AF16A /* Info-tvOS.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "Info-tvOS.plist"; sourceTree = "<group>"; };
 		900FFDBA1C0E1B6200B0A2B5 /* Helpers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Helpers.swift; sourceTree = "<group>"; };
 		900FFDBC1C135BCE00B0A2B5 /* FeluciaTestsHSL.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeluciaTestsHSL.swift; sourceTree = "<group>"; };
-		9061C9241BD5602900A191B7 /* Felucia.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Felucia.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9061C9241BD5602900A191B7 /* Felucia_iOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Felucia_iOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9061C9271BD5602900A191B7 /* Felucia.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Felucia.h; sourceTree = "<group>"; };
-		9061C9291BD5602900A191B7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		9061C92E1BD5602900A191B7 /* FeluciaTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FeluciaTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		9061C92E1BD5602900A191B7 /* FeluciaTests_iOS.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FeluciaTests_iOS.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		9061C9331BD5602900A191B7 /* FeluciaTestsRGBAInteger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeluciaTestsRGBAInteger.swift; sourceTree = "<group>"; };
 		9061C9351BD5602900A191B7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9061C93E1BD5604C00A191B7 /* Felucia.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Felucia.swift; sourceTree = "<group>"; };
@@ -46,6 +54,20 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		900EE6BF1CAFEFF9004AF16A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		900EE6D11CAFF124004AF16A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		9061C9201BD5602900A191B7 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -57,7 +79,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9061C92F1BD5602900A191B7 /* Felucia.framework in Frameworks */,
+				9061C92F1BD5602900A191B7 /* Felucia_iOS.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -76,8 +98,10 @@
 		9061C9251BD5602900A191B7 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				9061C9241BD5602900A191B7 /* Felucia.framework */,
-				9061C92E1BD5602900A191B7 /* FeluciaTests.xctest */,
+				9061C9241BD5602900A191B7 /* Felucia_iOS.framework */,
+				9061C92E1BD5602900A191B7 /* FeluciaTests_iOS.xctest */,
+				900EE6C31CAFEFF9004AF16A /* Felucia_watchOS.framework */,
+				900EE6D51CAFF124004AF16A /* Felucia_tvOS.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -85,8 +109,10 @@
 		9061C9261BD5602900A191B7 /* Felucia */ = {
 			isa = PBXGroup;
 			children = (
+				900EE6DE1CAFF159004AF16A /* Info-tvOS.plist */,
+				900EE6CC1CAFF06E004AF16A /* Info-iOS.plist */,
+				900EE6CD1CAFF06E004AF16A /* Info-watchOS.plist */,
 				9061C9271BD5602900A191B7 /* Felucia.h */,
-				9061C9291BD5602900A191B7 /* Info.plist */,
 				9061C93E1BD5604C00A191B7 /* Felucia.swift */,
 			);
 			path = Felucia;
@@ -110,6 +136,22 @@
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
+		900EE6C01CAFEFF9004AF16A /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				900EE6CB1CAFF015004AF16A /* Felucia.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		900EE6D21CAFF124004AF16A /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				900EE6DD1CAFF134004AF16A /* Felucia.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		9061C9211BD5602900A191B7 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
@@ -121,9 +163,45 @@
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		9061C9231BD5602900A191B7 /* Felucia */ = {
+		900EE6C21CAFEFF9004AF16A /* Felucia_watchOS */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 9061C9381BD5602900A191B7 /* Build configuration list for PBXNativeTarget "Felucia" */;
+			buildConfigurationList = 900EE6CA1CAFEFF9004AF16A /* Build configuration list for PBXNativeTarget "Felucia_watchOS" */;
+			buildPhases = (
+				900EE6BE1CAFEFF9004AF16A /* Sources */,
+				900EE6BF1CAFEFF9004AF16A /* Frameworks */,
+				900EE6C01CAFEFF9004AF16A /* Headers */,
+				900EE6C11CAFEFF9004AF16A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Felucia_watchOS;
+			productName = "Felucia-watchOS";
+			productReference = 900EE6C31CAFEFF9004AF16A /* Felucia_watchOS.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		900EE6D41CAFF124004AF16A /* Felucia_tvOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 900EE6DA1CAFF124004AF16A /* Build configuration list for PBXNativeTarget "Felucia_tvOS" */;
+			buildPhases = (
+				900EE6D01CAFF124004AF16A /* Sources */,
+				900EE6D11CAFF124004AF16A /* Frameworks */,
+				900EE6D21CAFF124004AF16A /* Headers */,
+				900EE6D31CAFF124004AF16A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Felucia_tvOS;
+			productName = "Felucia-tvOS";
+			productReference = 900EE6D51CAFF124004AF16A /* Felucia_tvOS.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		9061C9231BD5602900A191B7 /* Felucia_iOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9061C9381BD5602900A191B7 /* Build configuration list for PBXNativeTarget "Felucia_iOS" */;
 			buildPhases = (
 				9061C91F1BD5602900A191B7 /* Sources */,
 				9061C9201BD5602900A191B7 /* Frameworks */,
@@ -134,14 +212,14 @@
 			);
 			dependencies = (
 			);
-			name = Felucia;
+			name = Felucia_iOS;
 			productName = Felucia;
-			productReference = 9061C9241BD5602900A191B7 /* Felucia.framework */;
+			productReference = 9061C9241BD5602900A191B7 /* Felucia_iOS.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		9061C92D1BD5602900A191B7 /* FeluciaTests */ = {
+		9061C92D1BD5602900A191B7 /* FeluciaTests_iOS */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 9061C93B1BD5602900A191B7 /* Build configuration list for PBXNativeTarget "FeluciaTests" */;
+			buildConfigurationList = 9061C93B1BD5602900A191B7 /* Build configuration list for PBXNativeTarget "FeluciaTests_iOS" */;
 			buildPhases = (
 				9061C92A1BD5602900A191B7 /* Sources */,
 				9061C92B1BD5602900A191B7 /* Frameworks */,
@@ -152,9 +230,9 @@
 			dependencies = (
 				9061C9311BD5602900A191B7 /* PBXTargetDependency */,
 			);
-			name = FeluciaTests;
+			name = FeluciaTests_iOS;
 			productName = FeluciaTests;
-			productReference = 9061C92E1BD5602900A191B7 /* FeluciaTests.xctest */;
+			productReference = 9061C92E1BD5602900A191B7 /* FeluciaTests_iOS.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
@@ -166,6 +244,14 @@
 				LastUpgradeCheck = 0710;
 				ORGANIZATIONNAME = "Michał Tynior";
 				TargetAttributes = {
+					900EE6C21CAFEFF9004AF16A = {
+						CreatedOnToolsVersion = 7.3;
+						DevelopmentTeam = SGZ6FVQB6B;
+					};
+					900EE6D41CAFF124004AF16A = {
+						CreatedOnToolsVersion = 7.3;
+						DevelopmentTeam = SGZ6FVQB6B;
+					};
 					9061C9231BD5602900A191B7 = {
 						CreatedOnToolsVersion = 7.1;
 					};
@@ -187,13 +273,29 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				9061C9231BD5602900A191B7 /* Felucia */,
-				9061C92D1BD5602900A191B7 /* FeluciaTests */,
+				9061C9231BD5602900A191B7 /* Felucia_iOS */,
+				9061C92D1BD5602900A191B7 /* FeluciaTests_iOS */,
+				900EE6C21CAFEFF9004AF16A /* Felucia_watchOS */,
+				900EE6D41CAFF124004AF16A /* Felucia_tvOS */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		900EE6C11CAFEFF9004AF16A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		900EE6D31CAFF124004AF16A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		9061C9221BD5602900A191B7 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -211,6 +313,22 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		900EE6BE1CAFEFF9004AF16A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				900EE6E01CAFF239004AF16A /* Felucia.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		900EE6D01CAFF124004AF16A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				900EE6E11CAFF23E004AF16A /* Felucia.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		9061C91F1BD5602900A191B7 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -238,12 +356,94 @@
 /* Begin PBXTargetDependency section */
 		9061C9311BD5602900A191B7 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 9061C9231BD5602900A191B7 /* Felucia */;
+			target = 9061C9231BD5602900A191B7 /* Felucia_iOS */;
 			targetProxy = 9061C9301BD5602900A191B7 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
+		900EE6C81CAFEFF9004AF16A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Felucia/Info-watchOS.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.tynior.Felucia-watchOS";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.0;
+			};
+			name = Debug;
+		};
+		900EE6C91CAFEFF9004AF16A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Felucia/Info-watchOS.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.tynior.Felucia-watchOS";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.0;
+			};
+			name = Release;
+		};
+		900EE6DB1CAFF124004AF16A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ANALYZER_NONNULL = YES;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "$(SRCROOT)/Felucia/Info-tvOS.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.tynior.Felucia-tvOS";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = appletvos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 3;
+				TVOS_DEPLOYMENT_TARGET = 9.0;
+			};
+			name = Debug;
+		};
+		900EE6DC1CAFF124004AF16A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ANALYZER_NONNULL = YES;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "$(SRCROOT)/Felucia/Info-tvOS.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.tynior.Felucia-tvOS";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = appletvos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 3;
+				TVOS_DEPLOYMENT_TARGET = 9.0;
+			};
+			name = Release;
+		};
 		9061C9361BD5602900A191B7 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -281,7 +481,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -323,7 +523,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -342,9 +542,8 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = Felucia/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/Felucia/Info-iOS.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.tynior.Felucia;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -362,9 +561,8 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = Felucia/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/Felucia/Info-iOS.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.tynior.Felucia;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -395,6 +593,22 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		900EE6CA1CAFEFF9004AF16A /* Build configuration list for PBXNativeTarget "Felucia_watchOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				900EE6C81CAFEFF9004AF16A /* Debug */,
+				900EE6C91CAFEFF9004AF16A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		900EE6DA1CAFF124004AF16A /* Build configuration list for PBXNativeTarget "Felucia_tvOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				900EE6DB1CAFF124004AF16A /* Debug */,
+				900EE6DC1CAFF124004AF16A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
 		9061C91E1BD5602900A191B7 /* Build configuration list for PBXProject "Felucia" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -404,7 +618,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		9061C9381BD5602900A191B7 /* Build configuration list for PBXNativeTarget "Felucia" */ = {
+		9061C9381BD5602900A191B7 /* Build configuration list for PBXNativeTarget "Felucia_iOS" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				9061C9391BD5602900A191B7 /* Debug */,
@@ -413,7 +627,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		9061C93B1BD5602900A191B7 /* Build configuration list for PBXNativeTarget "FeluciaTests" */ = {
+		9061C93B1BD5602900A191B7 /* Build configuration list for PBXNativeTarget "FeluciaTests_iOS" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				9061C93C1BD5602900A191B7 /* Debug */,
