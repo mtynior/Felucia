@@ -31,6 +31,21 @@ github "mtynior/Felucia"
 ```
 Run `carthage update` to build the framework and drag the built `Felucia.framework` into your Xcode project.
 
+#### Swift Package Managers (SPM)
+You can use The [Swift Package Manager](https://swift.org/package-manager/) to install Felucia by adding it to your Package.swift file:
+
+```swift
+import PackageDescription
+
+let package = Package(
+    name: "MyApp",
+    targets: [],
+    dependencies: [
+        .Package(url: "https://github.com/mtynior/Felucia.git", versions: "1.0.0" ..< Version.max)
+    ]
+)
+```
+
 ####Manually
 You can also manually add Felucia to you project:
 
