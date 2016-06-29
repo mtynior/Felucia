@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Scheme
-   LastUpgradeVersion = "0710"
+   LastUpgradeVersion = "0800"
    version = "1.3">
    <BuildAction
       parallelizeBuildables = "YES"
@@ -15,7 +15,7 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "9061C9231BD5602900A191B7"
-               BuildableName = "Felucia_iOS.framework"
+               BuildableName = "Felucia.framework"
                BlueprintName = "Felucia_iOS"
                ReferencedContainer = "container:Felucia.xcodeproj">
             </BuildableReference>
@@ -43,7 +43,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "9061C9231BD5602900A191B7"
-            BuildableName = "Felucia_iOS.framework"
+            BuildableName = "Felucia.framework"
             BlueprintName = "Felucia_iOS"
             ReferencedContainer = "container:Felucia.xcodeproj">
          </BuildableReference>
@@ -65,7 +65,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "9061C9231BD5602900A191B7"
-            BuildableName = "Felucia_iOS.framework"
+            BuildableName = "Felucia.framework"
             BlueprintName = "Felucia_iOS"
             ReferencedContainer = "container:Felucia.xcodeproj">
          </BuildableReference>
@@ -83,7 +83,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "9061C9231BD5602900A191B7"
-            BuildableName = "Felucia_iOS.framework"
+            BuildableName = "Felucia.framework"
             BlueprintName = "Felucia_iOS"
             ReferencedContainer = "container:Felucia.xcodeproj">
          </BuildableReference>

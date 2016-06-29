@@ -241,12 +241,13 @@
 		9061C91B1BD5602900A191B7 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0710;
+				LastUpgradeCheck = 0800;
 				ORGANIZATIONNAME = "Michał Tynior";
 				TargetAttributes = {
 					900EE6C21CAFEFF9004AF16A = {
 						CreatedOnToolsVersion = 7.3;
 						DevelopmentTeam = SGZ6FVQB6B;
+						LastSwiftMigration = 0800;
 					};
 					900EE6D41CAFF124004AF16A = {
 						CreatedOnToolsVersion = 7.3;
@@ -379,6 +380,7 @@
 				PRODUCT_NAME = Felucia;
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = 4;
 				WATCHOS_DEPLOYMENT_TARGET = 2.0;
 			};
@@ -401,6 +403,8 @@
 				PRODUCT_NAME = Felucia;
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = 4;
 				WATCHOS_DEPLOYMENT_TARGET = 2.0;
 			};
@@ -443,6 +447,7 @@
 				PRODUCT_NAME = Felucia;
 				SDKROOT = appletvos;
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				TARGETED_DEVICE_FAMILY = 3;
 				TVOS_DEPLOYMENT_TARGET = 9.0;
 			};
@@ -571,6 +576,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.tynior.Felucia;
 				PRODUCT_NAME = Felucia;
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 			};
 			name = Release;
 		};
@@ -591,6 +597,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.tynior.FeluciaTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 			};
 			name = Release;
 		};

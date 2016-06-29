@@ -45,7 +45,7 @@ extension FeluciaTestsUtils {
     }
     
     func test_ColorLightenBy100PercentShouldBecomeWhite() {
-        let expectedColor = UIColor.whiteColor()
+        let expectedColor = UIColor.white()
         
         let lightenColor = UIColor(hexARGBString:"#f00")!.lighten(1.0)
         
@@ -65,7 +65,7 @@ extension FeluciaTestsUtils {
     }
     
     func test_ColorDarkenBy100PercentShouldBecomeBlack() {
-        let expectedColor = UIColor.blackColor()
+        let expectedColor = UIColor.black()
         
         let darkenColor = UIColor(hexARGBString:"#f00")!.darken(1.0)
         
@@ -81,7 +81,7 @@ extension FeluciaTestsUtils {
     func test_ShouldReturnWhiteAsComplementaryColorToBlack() {
         let expectedComponents = (r: 255, g: 255, b: 255, a: 255) // expected color is white
         
-        let invertedColor = UIColor.blackColor().complementaryColor()
+        let invertedColor = UIColor.black().complementaryColor()
         let actualComponents = invertedColor.rgba()
         
         let areTuplesEquels = actualComponents == expectedComponents
@@ -91,7 +91,7 @@ extension FeluciaTestsUtils {
     func test_ShouldReturnBlackAsComplementaryColorToWhite() {
         let expectedComponents = (r: 0, g: 0, b: 0, a: 255) // expected color is black
         
-        let invertedColor = UIColor.whiteColor().complementaryColor()
+        let invertedColor = UIColor.white().complementaryColor()
         let actualComponents = invertedColor.rgba()
         
         let areTuplesEquels = actualComponents == expectedComponents
@@ -103,7 +103,7 @@ extension FeluciaTestsUtils {
 extension FeluciaTestsUtils {
     
     func test_IsLightShouldReturnTrueForWhiteColor() {
-        let color = UIColor.whiteColor()
+        let color = UIColor.white()
         
         let actualResult = color.isLight()
         
@@ -111,7 +111,7 @@ extension FeluciaTestsUtils {
     }
     
     func test_IsLightShouldReturnFalseForBlackColor() {
-        let color = UIColor.blackColor()
+        let color = UIColor.black()
         
         let actualResult = color.isLight()
         
@@ -119,7 +119,7 @@ extension FeluciaTestsUtils {
     }
     
     func test_IsDarkShouldReturnTrueForBlackColor() {
-        let color = UIColor.blackColor()
+        let color = UIColor.black()
         
         let actualResult = color.isDark()
         
@@ -127,7 +127,7 @@ extension FeluciaTestsUtils {
     }
     
     func test_IsDarkShouldReturnFalseForWhiteColor() {
-        let color = UIColor.whiteColor()
+        let color = UIColor.white()
         
         let actualResult = color.isDark()
         

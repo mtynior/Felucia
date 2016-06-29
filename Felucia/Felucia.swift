@@ -57,7 +57,7 @@ extension UIColor {
         return [components.r, components.g, components.b, components.a]
     }
     
-    private class func clamp(value:Int, minValue:Int, maxValue:Int) -> Int {
+    private class func clamp(_ value:Int, minValue:Int, maxValue:Int) -> Int {
         return max(minValue, min(value, maxValue))
     }
 }
@@ -103,16 +103,16 @@ extension UIColor {
         }
     }
     
-    private class func getComponents(hexString: String, pattern: String) -> [String]? {
-        let regex = try! NSRegularExpression(pattern: pattern, options: .CaseInsensitive)
+    private class func getComponents(_ hexString: String, pattern: String) -> [String]? {
+        let regex = try! RegularExpression(pattern: pattern, options: .caseInsensitive)
         
-        guard let match = regex.firstMatchInString(hexString, options:[], range:NSMakeRange(0, hexString.characters.count)) else  {
+        guard let match = regex.firstMatch(in: hexString, options:[], range:NSMakeRange(0, hexString.characters.count)) else  {
             return nil
         }
         
         var components = [String]()
         for index in 1 ..< match.numberOfRanges {
-            let component: String = (hexString as NSString).substringWithRange(match.rangeAtIndex(index))
+            let component: String = (hexString as NSString).substring(with: match.range(at: index))
             components.append(component)
         }
         
@@ -198,7 +198,7 @@ extension UIColor {
         self.init(colorLiteralRed: r, green: g, blue: b, alpha: a)
     }
     
-    class func hue2rgb(p:Float, q:Float,  t1:Float) -> Float {
+    class func hue2rgb(_ p:Float, q:Float,  t1:Float) -> Float {
         var t = t1
         if(t < 0) {t += 1}
         if(t > 1) {t -= 1}
@@ -286,7 +286,7 @@ extension UIColor {
 
     }
 
-    public func lighten(percentage: Float = 0.1) -> UIColor {
+    public func lighten(_ percentage: Float = 0.1) -> UIColor {
         var components = hsla()
         
         components.l += percentage
@@ -295,7 +295,7 @@ extension UIColor {
         return UIColor(h: components.h, s: components.s, l: components.l)
     }
     
-    public func darken(percentage: Float = 0.1) -> UIColor {
+    public func darken(_ percentage: Float = 0.1) -> UIColor {
         var components = hsla()
         
         components.l -= percentage
