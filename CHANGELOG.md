@@ -1,22 +1,26 @@
 # Change Log
 
 #### 1.x Releases
-- `1.x.x` Releases - [1.4.0](#140)
+- `1.5.x` Releases - [1.5.0](#150)
+- `1.4.x` Releases - [1.4.0](#140)
 - `1.3.x` Releases - [1.3.0](#130)
 - `1.2.x` Releases - [1.2.0](#120)
 - `1.1.x` Releases - [1.1.0](#110)
 - `1.0.x` Releases - [1.0.0](#100)
 
 ---
+## [1.5.0](https://github.com/mtynior/Felucia/releases/tag/1.5.0)
+Released on 2016-11-01.
+
+#### Updated
+- Source code to Swift 3.0	
+- Project to Xcode 8
+
 ## [1.4.0](https://github.com/mtynior/Felucia/releases/tag/1.4.0)
 Released on 2016-11-01.
 
 #### Added
 - Support for Swift Package Manager
-
-#### Updated
-- Source code to Swift 3.0	
-- Project to Xcode 8
 
 ## [1.3.0](https://github.com/mtynior/Felucia/releases/tag/1.3.0)
 Released on 2016-06-29.
