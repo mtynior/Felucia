@@ -47,7 +47,7 @@ extension FeluciaTestsUtils {
     func test_ColorLightenBy100PercentShouldBecomeWhite() {
         let expectedColor = UIColor.white
         
-        let lightenColor = UIColor(hexARGB:"#f00")!.lighten(percentage: 1.0)
+        let lightenColor = UIColor(hexARGB:"#f00")!.lighten(1.0)
         
         let areEqual = expectedColor == lightenColor
         
@@ -67,7 +67,7 @@ extension FeluciaTestsUtils {
     func test_ColorDarkenBy100PercentShouldBecomeBlack() {
         let expectedColor = UIColor.black
         
-        let darkenColor = UIColor(hexARGB:"#f00")!.darken(percentage: 1.0)
+        let darkenColor = UIColor(hexARGB:"#f00")!.darken(1.0)
         
         let areEqual = expectedColor == darkenColor
         

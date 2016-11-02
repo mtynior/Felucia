@@ -29,10 +29,10 @@ public func != (lhs: UIColor, rhs: UIColor) -> Bool {
 extension UIColor {
     
     public convenience init(r: Int, g: Int, b: Int, a: Int = 255) {
-        let ratioRed = Float(UIColor.clamp(value: r, minValue: 0, maxValue: 255)) / 255.0
-        let ratioGreen = Float(UIColor.clamp(value: g, minValue: 0, maxValue: 255)) / 255.0
-        let ratioBlue = Float(UIColor.clamp(value: b, minValue: 0, maxValue: 255)) / 255.0
-        let ratioAlpha = Float(UIColor.clamp(value: a, minValue: 0, maxValue: 255)) / 255.0
+        let ratioRed = Float(UIColor.clamp(r, minValue: 0, maxValue: 255)) / 255.0
+        let ratioGreen = Float(UIColor.clamp(g, minValue: 0, maxValue: 255)) / 255.0
+        let ratioBlue = Float(UIColor.clamp(b, minValue: 0, maxValue: 255)) / 255.0
+        let ratioAlpha = Float(UIColor.clamp(a, minValue: 0, maxValue: 255)) / 255.0
         
         self.init(colorLiteralRed: ratioRed, green: ratioGreen, blue: ratioBlue, alpha: ratioAlpha)
     }
@@ -57,7 +57,7 @@ extension UIColor {
         return [components.r, components.g, components.b, components.a]
     }
     
-    private class func clamp(value: Int, minValue: Int, maxValue: Int) -> Int {
+    fileprivate class func clamp(_ value: Int, minValue: Int, maxValue: Int) -> Int {
         return max(minValue, min(value, maxValue))
     }
 }
@@ -71,19 +71,19 @@ extension UIColor {
         let hex6 = "^#?([0-9a-fA-F]{2})([0-9a-fA-F]{2})([0-9a-fA-F]{2})$"
         let hex8 = "^#?([0-9a-fA-F]{2})([0-9a-fA-F]{2})([0-9a-fA-F]{2})([0-9a-fA-F]{2})$"
         
-        if let comp = UIColor.getComponents(hex: hexARGB, pattern: hex3) {
+        if let comp = UIColor.getComponents(hexARGB, pattern: hex3) {
             let r = Int(comp[0] + comp[0], radix:16)!
             let g = Int(comp[1] + comp[1], radix:16)!
             let b = Int(comp[2] + comp[2], radix:16)!
             
             self.init(r:r, g:g, b:b)
-        } else if let comp = UIColor.getComponents(hex: hexARGB, pattern: hex6) {
+        } else if let comp = UIColor.getComponents(hexARGB, pattern: hex6) {
             let r = Int(comp[0], radix:16)!
             let g = Int(comp[1], radix:16)!
             let b = Int(comp[2], radix:16)!
             
             self.init(r:r, g:g, b:b)
-        } else if let comp = UIColor.getComponents(hex: hexARGB, pattern: hex8) {
+        } else if let comp = UIColor.getComponents(hexARGB, pattern: hex8) {
             let a = Int(comp[0], radix:16)!
             let r = Int(comp[1], radix:16)!
             let g = Int(comp[2], radix:16)!
@@ -100,7 +100,7 @@ extension UIColor {
         }
     }
     
-    private class func getComponents(hex: String, pattern: String) -> [String]? {
+    fileprivate class func getComponents(_ hex: String, pattern: String) -> [String]? {
         let regex = try! NSRegularExpression(pattern: pattern, options: .caseInsensitive)
         
         guard let match = regex.firstMatch(in: hex, options: [], range: NSRange(location: 0, length: hex.characters.count)) else {
@@ -187,15 +187,15 @@ extension UIColor {
         } else {
             let q = (normalizedL < 0.5) ? (normalizedL * (1 + normalizedS)) : (normalizedL + normalizedS - normalizedL * normalizedS)
             let p = 2 * normalizedL - q
-            r = UIColor.hue2rgb(p: p, q: q, t1: normalizedH + 1.0/3.0)
-            g = UIColor.hue2rgb(p: p, q: q, t1: normalizedH)
-            b = UIColor.hue2rgb(p: p, q: q, t1: normalizedH - 1.0/3.0)
+            r = UIColor.hue2rgb(p, q: q, t1: normalizedH + 1.0/3.0)
+            g = UIColor.hue2rgb(p, q: q, t1: normalizedH)
+            b = UIColor.hue2rgb(p, q: q, t1: normalizedH - 1.0/3.0)
         }
         
         self.init(colorLiteralRed: r, green: g, blue: b, alpha: a)
     }
     
-    class func hue2rgb(p: Float, q: Float, t1: Float) -> Float {
+    class func hue2rgb(_ p: Float, q: Float, t1: Float) -> Float {
         var t = t1
         if(t < 0) {t += 1}
         if(t > 1) {t -= 1}
@@ -282,7 +282,7 @@ extension UIColor {
         
     }
     
-    public func lighten(percentage: Float = 0.1) -> UIColor {
+    public func lighten(_ percentage: Float = 0.1) -> UIColor {
         var components = hsla()
         
         components.l += percentage
@@ -291,7 +291,7 @@ extension UIColor {
         return UIColor(h: components.h, s: components.s, l: components.l)
     }
     
-    public func darken(percentage: Float = 0.1) -> UIColor {
+    public func darken(_ percentage: Float = 0.1) -> UIColor {
         var components = hsla()
         
         components.l -= percentage
