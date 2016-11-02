@@ -1,11 +1,11 @@
-#Felucia  [![Build Status](https://travis-ci.org/mtynior/Felucia.svg?branch=master)](https://travis-ci.org/mtynior/Felucia) [![Swift 2.0](https://img.shields.io/badge/language-Swift-orange.svg?style=flat)](https://developer.apple.com/swift/) [![License](https://img.shields.io/badge/license-MIT-blue.svg)](https://github.com/mtynior/Felucia/blob/master/LICENSE.md) [![CocoaPods](https://img.shields.io/cocoapods/v/Felucia.svg)](https://cocoapods.org/pods/Felucia)  [![Carthage](https://img.shields.io/badge/Carthage-compatible-4BC51D.svg?style=flat)](https://github.com/Carthage/Carthage)
+#Felucia  [![Build Status](https://travis-ci.org/mtynior/Felucia.svg?branch=master)](https://travis-ci.org/mtynior/Felucia) [![Swift 3.0](https://img.shields.io/badge/language-Swift-orange.svg?style=flat)](https://developer.apple.com/swift/) [![License](https://img.shields.io/badge/license-MIT-blue.svg)](https://github.com/mtynior/Felucia/blob/master/LICENSE.md) [![CocoaPods](https://img.shields.io/cocoapods/v/Felucia.svg)](https://cocoapods.org/pods/Felucia)  [![Carthage](https://img.shields.io/badge/Carthage-compatible-4BC51D.svg?style=flat)](https://github.com/Carthage/Carthage)
 
 Felucia provides useful extensions to UIColor.
 
 ## Requirements
 
 - iOS 9.0+ / tvOS 9.0+ / watchOS 2.0+
-- Xcode 7.3+
+- Xcode 8+
 
 ##Integration
 
@@ -41,7 +41,7 @@ let package = Package(
     name: "MyApp",
     targets: [],
     dependencies: [
-        .Package(url: "https://github.com/mtynior/Felucia.git", versions: "1.0.0" ..< Version.max)
+        .Package(url: "https://github.com/mtynior/Felucia.git", majorVersion: 1)
     ]
 )
 ```
@@ -59,22 +59,22 @@ You can also manually add Felucia to you project:
 #### Hex ARGB string
 
 ```swift
-UIColor(hexARGBString:"#fff")
-UIColor(hexARGBString:"fff")
-UIColor(hexARGBString:"#e2f5d3")
-UIColor(hexARGBString:"e2f5d3")
-UIColor(hexARGBString:"#ffe2f5d3")
-UIColor(hexARGBString:"ffe2f5d3")
+UIColor(hexARGB: "#fff")
+UIColor(hexARGB: "fff")
+UIColor(hexARGB: "#e2f5d3")
+UIColor(hexARGB: "e2f5d3")
+UIColor(hexARGB: "#ffe2f5d3")
+UIColor(hexARGB: "ffe2f5d3")
 ``` 
 
 #### RGBA 
 
 ```swift
-UIColor(r:255, g:128, b:64, a:255)
-UIColor(r:255, g:128, b:64)
+UIColor(r: 255, g: 128, b: 64, a: 255)
+UIColor(r: 255, g: 128, b: 64)
 
-UIColor(red:1.0, green:0.5, blue:0.25, alpha:1.0)
-UIColor(red:1.0, green:0.5, blue:0.25)
+UIColor(red: 1.0, green: 0.5, blue: 0.25, alpha: 1.0)
+UIColor(red: 1.0, green: 0.5, blue: 0.25)
 ``` 
 
 #### CMYK
@@ -100,20 +100,20 @@ UIColor(h: 0.436, s: 0.24, l: 0.51, a: 1.0)
 ### Retrieving color components
 
 ```swift
-UIColor(r:255, g:128, b:64, a:255).rgba() // (r:255, g:128, b:64, a:255)
-UIColor(r:255, g:128, b:64, a:255).rgbaArray() // [255, 128, 64, 255]
+UIColor(r: 255, g: 128, b: 64, a: 255).rgba() // (r: 255, g: 128, b: 64, a: 255)
+UIColor(r: 255, g: 128, b: 64, a: 255).rgbaArray() // [255, 128, 64, 255]
 
-UIColor(r:255, g:128, b:64, a:255).rgbaf() // (r:1.0, g:0.5, b:0.25, a:1.0)
-UIColor(r:255, g:128, b:64, a:255).rgbafArray() // [1.0, 0.5, 0.25, 1.0]
+UIColor(r: 255, g: 128, b: 64, a: 255).rgbaf() // (r: 1.0, g: 0.5, b: 0.25, a: 1.0)
+UIColor(r: 255, g: 128, b: 64, a: 255).rgbafArray() // [1.0, 0.5, 0.25, 1.0]
 
-UIColor(r:255, g:128, b:64, a:255).hsba() // (h:0.056, s:0.749, b:1.0, a:1.0)
-UIColor(r:255, g:128, b:64, a:255).hsbaArray() // [0.056, 0.749, 1.0, 1.0]
+UIColor(r: 255, g: 128, b: 64, a: 255).hsba() // (h: 0.056, s: 0.749, b: 1.0, a: 1.0)
+UIColor(r: 255, g: 128, b: 64, a: 255).hsbaArray() // [0.056, 0.749, 1.0, 1.0]
 
-UIColor(r:255, g:128, b:64, a:255).hsla() // (h:0.0558464, s:1.0, l:0.62549, a:1.0)
-UIColor(r:255, g:128, b:64, a:255).hslaArray() // [0.0558464, 1.0, 0.62549, a:1.0]
+UIColor(r: 255, g: 128, b: 64, a: 255).hsla() // (h: 0.0558464, s: 1.0, l: 0.62549, a: 1.0)
+UIColor(r: 255, g: 128, b: 64, a: 255).hslaArray() // [0.0558464, 1.0, 0.62549, a:1.0]
 
-UIColor(r:255, g:128, b:64, a:255).cmyk() // (c:0.0, m:0.498, y:0.749, k:0.0)
-UIColor(r:255, g:128, b:64, a:255).cmykArray() // [0.0, 0.498, 0.749, 0.0]
+UIColor(r: 255, g: 128, b: 64, a: 255).cmyk() // (c: 0.0, m: 0.498, y: 0.749, k: 0.0)
+UIColor(r: 255, g: 128, b: 64, a: 255).cmykArray() // [0.0, 0.498, 0.749, 0.0]
 ```
 
 ### Utilities
@@ -123,7 +123,7 @@ Returns complementary color.
 
 ```swift
 let color = UIColor.whiteColor().complementaryColor() 
-color.rgba() // (r:0, g:0, b:0, a:255)
+color.rgba() // (r: 0, g: 0, b: 0, a: 255)
 ```
 
 #### Lighten
@@ -131,12 +131,12 @@ Lightens the color a given amount, from 0.0 to 1.0. Providing 1.0 will always re
 
 ```swift
 let color = UIColor.redColor().lighten()
-color.rgba() // (r:255, g:51, b:51, a:255)
+color.rgba() // (r: 255, g: 51, b: 51, a: 255)
 ```
 
 ```swift
 let color = UIColor.redColor().lighten(1.0)
-color.rgba() // (r:255, g:255, b:255, a:255)
+color.rgba() // (r: 255, g: 255, b: 255, a: 255)
 ```
 
 #### Darken
@@ -144,11 +144,11 @@ Darkens the color a given amount, from 0.0 to 1.0. Providing 1.0 will always ret
 
 ```swift
 let color = UIColor.redColor().darken()
-color.rgba() // (r:204, g:0, b:0, a:255)
+color.rgba() // (r: 204, g: 0, b: 0, a: 255)
 ```
 ```swift
 let color = UIColor.redColor().darken(1.0)
-color.rgba() // (r:0, g:0, b:0, a:255)
+color.rgba() // (r: 0, g: 0, b: 0, a: 255)
 ```
 
 #### Grayscale
@@ -156,7 +156,7 @@ Desaturates a color into greyscale.
 
 ```swift
 let color = UIColor(r: 67, g: 122, b: 134).grayscale()
-color.rgba() // (r:106, g:106, b:106, a:255)
+color.rgba() // (r: 106, g: 106, b: 106, a: 255)
 ```
 
 #### IsLight

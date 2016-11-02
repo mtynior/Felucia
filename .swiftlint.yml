@@ -1,0 +1,28 @@
+disabled_rules: # rule identifiers to exclude from running
+- force_cast
+- trailing_whitespace
+- control_statement
+- type_name
+- variable_name
+- force_try
+# Find all the available rules by running:
+# swiftlint rules
+
+included: # paths to include during linting. `--path` is ignored if present.
+
+
+excluded: # paths to ignore during linting. Takes precedence over `included`.
+
+# parameterized rules can be customized from this configuration file
+line_length: 256
+
+function_parameter_count:
+- 30
+- 40
+
+# parameterized rules are first parameterized as a warning level, then error level.
+type_body_length:
+- 500 # warning
+- 1000 # error
+
+#reporter: "csv" # reporter type (xcode, json, csv, checkstyle)

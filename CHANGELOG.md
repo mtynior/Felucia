@@ -1,15 +1,15 @@
 # Change Log
 
 #### 1.x Releases
-- `1.x.x` Releases - [1.x.0](#1xx)
+- `1.x.x` Releases - [1.4.0](#140)
 - `1.3.x` Releases - [1.3.0](#130)
 - `1.2.x` Releases - [1.2.0](#120)
 - `1.1.x` Releases - [1.1.0](#110)
 - `1.0.x` Releases - [1.0.0](#100)
 
 ---
-## [1.X.X](https://github.com/mtynior/Felucia/releases/tag/1.X.X)# 
-Released on 2016-XX-XX.
+## [1.4.0](https://github.com/mtynior/Felucia/releases/tag/1.4.0)
+Released on 2016-11-01.
 
 #### Added
 - Support for Swift Package Manager
