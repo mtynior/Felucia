@@ -6,21 +6,14 @@ platform :ios do
 
   desc "Runs all the tests"
   lane :test do
-      xctest(
-      scheme: 'Felucia-iOS',
-      destination: "platform=iOS Simulator,name=iPhone 6,OS=9.3",
-      reports: [
-        {
-          report: "html",
-          output: "build/reports/unit-tests.html"
-        },
-        {
-          report: "junit",
-          output: "build/reports/unit-tests.xml"
-        }
-      ],
-      clean: nil
-    )
+     scan(
+         project: "Felucia.xcodeproj",
+         scheme: "Felucia-iOS",
+         devices: ["iPhone 6s"],
+         clean: true,
+         output_directory: "build/reports",
+         output_types: "html, junit",
+     )
   end
 
 end

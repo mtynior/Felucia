@@ -14,37 +14,37 @@ class FeluciaTestsHexColor: XCTestCase {
     func test_ShouldCreateColorFromHex3String() {
         let expectedColor = UIColor(r: 255, g: 187, b: 204, a: 255)
         
-        let actualColor = UIColor(hexARGBString: "#FBC")
+        let actualColor = UIColor(hexARGB: "#FBC")
         
-        XCTAssertEqual(actualColor, expectedColor,  "Should create from hex3 ARGB String")
+        XCTAssertEqual(actualColor, expectedColor, "Should create from hex3 ARGB String")
     }
     
     func test_ShouldCreateColorFromHex6String() {
         let expectedColor = UIColor(r: 255, g: 128, b: 64, a: 255)
 
-        let actualColor = UIColor(hexARGBString: "#FF8040")
+        let actualColor = UIColor(hexARGB: "#FF8040")
         
-        XCTAssertEqual(actualColor, expectedColor,  "Should create from hex6 ARGB String")
+        XCTAssertEqual(actualColor, expectedColor, "Should create from hex6 ARGB String")
     }
     
     func test_ShouldCreateColorFromHex8String() {
         let expectedColor = UIColor(r: 255, g: 187, b: 204, a: 128)
 
-        let actualColor = UIColor(hexARGBString: "#80FFBBCC")
+        let actualColor = UIColor(hexARGB: "#80FFBBCC")
         
-        XCTAssertEqual(actualColor, expectedColor,  "Should create from hex8 ARGB String")
+        XCTAssertEqual(actualColor, expectedColor, "Should create from hex8 ARGB String")
     }
     
     func test_ShouldCreateColorForHexWithoutLeadingHash() {
         let expectedColor = UIColor(r: 255, g: 187, b: 204, a: 128)
         
-        let actualColor = UIColor(hexARGBString: "80FFBBCC")
+        let actualColor = UIColor(hexARGB: "80FFBBCC")
         
-        XCTAssertEqual(actualColor, expectedColor,  "Should create color for hex without leading hash")
+        XCTAssertEqual(actualColor, expectedColor, "Should create color for hex without leading hash")
     }
     
     func test_ShouldReturnNilForInvalidHexString() {
-        let actualColor = UIColor(hexARGBString: "#FBCFBCFBCFCB")
+        let actualColor = UIColor(hexARGB: "#FBCFBCFBCFCB")
         
         XCTAssertNil(actualColor, "Should return nil for invalid ARGB String")
     }

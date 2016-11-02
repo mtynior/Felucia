@@ -12,7 +12,7 @@ import XCTest
 class FeluciaTestsRGBAFloat: XCTestCase {
     
     func test_ShouldReturnTupleWithRGBACompoments() {
-        let expectedTuple : (r: Float, g:Float, b:Float, a:Float) = (1.0, 0.75, 0.5, 0.25)
+        let expectedTuple: (r: Float, g: Float, b: Float, a: Float) = (1.0, 0.75, 0.5, 0.25)
         let color = UIColor(red: 1.0, green: 0.75, blue: 0.5, alpha: 0.25)
         
         let actualTuple = color.rgbaf()
@@ -22,7 +22,7 @@ class FeluciaTestsRGBAFloat: XCTestCase {
     }
     
     func test_ShouldReturnArrayWithRGBACompoments() {
-        let expectedArray  : [Float] = [1.0, 0.75, 0.5, 0.25]
+        let expectedArray: [Float] = [1.0, 0.75, 0.5, 0.25]
         let color = UIColor(red: 1.0, green: 0.75, blue: 0.5, alpha: 0.25)
         
         let actualArray = color.rgbafArray()
