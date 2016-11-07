@@ -15,7 +15,7 @@ Pod::Spec.new do |s|
   s.watchos.deployment_target = '2.0'
 
   s.source       = { :git => "https://github.com/mtynior/Felucia.git", :tag =>  s.version }
-  s.source_files  = "Felucia/*.swift"
+  s.source_files  = "Source/*.swift"
  
   s.requires_arc = true
 
