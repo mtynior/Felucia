@@ -1,7 +1,7 @@
 Pod::Spec.new do |s|
 
   s.name         = "Felucia"
-  s.version      = "1.5.2"
+  s.version      = "1.5.3"
   s.summary      = "UIColor extensions in swift."
 
   s.homepage     = "https://github.com/mtynior/Felucia"
