@@ -2,14 +2,20 @@
 
 Felucia provides useful extensions to UIColor.
 
+<br />
+<br />
+<h1 align="center">Project is no longer maintained!</h1>
+<br />
+<br />
+
 ## Requirements
 
 - iOS 9.0+ / tvOS 9.0+ / watchOS 2.0+
 - Xcode 8+
 
-##Integration
+## Integration
 
-####CocoaPods
+#### CocoaPods
 You can use [CocoaPods](http://cocoapods.org/) to install `Felucia` by adding it to your `Podfile`:
 
 ```ruby
@@ -22,7 +28,7 @@ end
 ```
 Run `pods install` to intagrate pods with your project.
 
-####Carthage
+#### Carthage
 You can use [Carthage](https://github.com/Carthage/Carthage) to install `Felucia ` by adding it to your `Cartfile`:
 
 ```
@@ -46,7 +52,7 @@ let package = Package(
 )
 ```
 
-####Manually
+#### Manually
 You can also manually add Felucia to you project:
 
 1. Download `Felucia.swift` file,
@@ -185,6 +191,6 @@ let color = UIColor.randomColor()
 color.rgba() // (r: 67, g: 122, b: 134 a:255)
 ```
 
-##License
+## License
 
 Felucia is released under the MIT license. See LICENSE for details.
